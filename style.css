@@ -6,93 +6,180 @@
   --border: rgba(255,255,255,0.12);
   --link: #9ad0ff;
   --linkHover: #c7e6ff;
+  --radius: 14px;
 }
 
 * { box-sizing: border-box; }
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 14px;
   color: var(--text);
-  background: radial-gradient(1200px 600px at 20% 10%, rgba(154,208,255,0.18), transparent 60%),
-              radial-gradient(900px 500px at 80% 20%, rgba(167,139,250,0.16), transparent 55%),
-              var(--bg);
+  background:
+    radial-gradient(1200px 600px at 20% 10%, rgba(154,208,255,0.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 20%, rgba(167,139,250,0.16), transparent 55%),
+    var(--bg);
 }
 
 .container {
-  max-width: 960px;
+  max-width: 820px;
   margin: 0 auto;
-  padding: 48px 20px;
+  padding: 46px 16px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* Header */
+.siteHeader {
+  text-align: center;
   margin-bottom: 28px;
 }
 
-.badge {
-  display: inline-flex;
-  width: fit-content;
-  padding: 6px 10px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(255,255,255,0.04);
-  color: var(--muted);
-  font-size: 14px;
+h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
 }
 
-h1 { margin: 0; font-size: 36px; letter-spacing: -0.5px; }
-p { margin: 0; color: var(--muted); line-height: 1.6; }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.card {
-  grid-column: span 12;
-  padding: 18px;
-  border: 1px solid var(--border);
-  background: var(--card);
-  border-radius: 14px;
-  backdrop-filter: blur(10px);
-}
-
-.card h2 {
-  margin: 0 0 10px 0;
-  font-size: 18px;
-}
-
-.links {
-  list-style: none;
-  padding: 0;
+p {
   margin: 0;
-  display: grid;
-  gap: 10px;
+  color: var(--muted);
+  line-height: 1.55;
 }
-
-a {
-  color: var(--link);
-  text-decoration: none;
-}
-a:hover { color: var(--linkHover); text-decoration: underline; }
 
 .meta {
-  margin-top: 10px;
-  font-size: 13px;
+  margin-top: 6px;
+  font-size: 12px;
   color: rgba(230,238,252,0.6);
 }
 
-footer {
-  margin-top: 22px;
-  color: rgba(230,238,252,0.55);
+/* Sections */
+.sectionBlock {
+  text-align: center;
+  padding: 6px 0 14px;
+}
+
+/* Add breathing room between section paragraph and the button row */
+.sectionBlock .btnRow {
+  margin-top: 16px;
+}
+
+.sectionTitle {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.sectionSubTitle {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255,255,255,0.10);
+  margin: 18px auto;
+  width: 72%;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+}
+
+/* Two-column artifact layout */
+.artifactGrid {
+  display: grid;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .artifactGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Buttons */
+.btnRow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Stack buttons vertically inside artifact cards */
+.card .btnRow {
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   font-size: 13px;
 }
 
-@media (min-width: 760px) {
-  .card.half { grid-column: span 6; }
-  .card.third { grid-column: span 4; }
+.btn:hover {
+  background: rgba(255,255,255,0.10);
+  border-color: rgba(255,255,255,0.18);
+  transform: translateY(-1px);
+}
+
+.btnRowStack {
+  margin-top: 12px;
+}
+
+/* Narratives layout */
+.narrativeLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.enhCol {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: left;
+}
+
+.enhTitle {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.enhSub {
+  margin-top: 12px;
+}
+
+.enhLabel {
+  margin-bottom: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(230,238,252,0.7);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.enhText {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* Footer */
+footer {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(230,238,252,0.5);
 }
