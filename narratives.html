@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Narratives • CS 499 ePortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="siteHeader">
+            <h1>Narratives</h1>
+            <p class="meta">CS 499 ePortfolio</p>
+        </header>
+
+        <div class="divider"></div>
+
+        <!-- Narratives -->
+        <section class="sectionBlock">
+            <p>
+                The artifact I selected is the Airgead Banking interest calculator, which was originally created as a
+                C++ console application in CS 210 (taken in July 2024). The original artifact calculates yearly balances
+                and interest with and without monthly deposits based on user input. I selected this artifact because it
+                was well-suited for expansion and allowed me to show growth from my first class to my last class. In
+                each enhancement, I learned how to adapt existing code to a new environment while accurately preserving
+                original logic and behavior.
+            </p>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Enhancements -->
+        <div class="narrativeLayout">
+
+            <!-- E1 -->
+            <article class="enhCol">
+                <h3 class="enhTitle">Enhancement 1: Software Engineering and Design</h3>
+
+                <div class="enhSub">
+                    <p class="enhLabel">Improvement</p>
+                    <p class="enhText">
+                        The artifact was improved by transitioning it into a browser-based web application and
+                        refactoring the logic so calculations are separated from the user interface. Additionally, the
+                        code was ported from C++ to JavaScript.
+                    </p>
+                </div>
+
+                <div class="enhSub">
+                    <p class="enhLabel">Challenges</p>
+                    <p class="enhText">
+                        The main challenge I faced was ensuring the web-based version matched the original calculation
+                        results while keeping in mind the restructuring needed for future enhancements.
+                    </p>
+                </div>
+            </article>
+
+            <!-- E2 -->
+            <article class="enhCol">
+                <h3 class="enhTitle">Enhancement 2: Algorithms &amp; Data Structures</h3>
+
+                <div class="enhSub">
+                    <p class="enhLabel">Improvement</p>
+                    <p class="enhText">
+                        The artifact was improved by implementing an in-memory data structure that stores multiple
+                        investment scenarios as objects in an array. Sorting algorithms were also added using
+                        comparison-based sorting to organize scenarios by creation date or initial investment amount.
+                    </p>
+                </div>
+
+                <div class="enhSub">
+                    <p class="enhLabel">Challenges</p>
+                    <p class="enhText">
+                        The main challenge I faced was ensuring the original calculation behavior was kept intact while
+                        integrating new data structures and algorithms. This process helped reinforce the idea of
+                        modular design and the intentional separation between different components.
+                    </p>
+                </div>
+            </article>
+
+            <!-- E3 -->
+            <article class="enhCol">
+                <h3 class="enhTitle">Enhancement 3: Databases</h3>
+
+                <div class="enhSub">
+                    <p class="enhLabel">Improvement</p>
+                    <p class="enhText">
+                        The artifact was improved by adding persistent data storage using a cloud-hosted database while
+                        preserving the original calculation logic. Authentication was introduced to associate saved
+                        investment scenarios with individual users, and a local fallback mechanism was implemented to
+                        allow scenarios to be saved when a user is not logged in.
+                    </p>
+                </div>
+
+                <div class="enhSub">
+                    <p class="enhLabel">Challenges</p>
+                    <p class="enhText">
+                        The main challenge I faced was preserving the original calculation behavior while integrating
+                        database backed storage, local fallback handling, and authenticated access. This process helped
+                        reinforce the idea of modular design and careful refactoring. Additionally, I encountered minor
+                        challenges related to visual layout and styling logic which required additional testing.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="btnRow btnRowStack">
+            <a class="btn btnGhost" href="index.html">Back to Portfolio</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <footer>
+            <p>© 2026 • Built with GitHub Pages</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
