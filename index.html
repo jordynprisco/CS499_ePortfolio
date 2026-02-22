@@ -1,84 +1,113 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CS 499 ePortfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CS 499 ePortfolio</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <span class="badge">CS 499 • ePortfolio</span>
-      <h1>Jordyn’s ePortfolio</h1>
-      <p>
-        This site includes my code review, enhanced artifacts, and narratives for the CS 499 Capstone.
-      </p>
-      <p class="meta">Focus: clean software design, algorithms, databases, and security basics.</p>
-    </header>
+    <div class="container">
 
-    <section class="grid">
-      <div class="card half">
-        <h2>Code Review</h2>
-        <ul class="links">
-          <li><a href="code-review.html">Code review video + notes</a></li>
-        </ul>
-      </div>
+        <header class="siteHeader">
+            <h1>Jordyn’s ePortfolio</h1>
+            <p>
+                This site includes my professional self-assessment, original artifact, enhanced artifact, code review, and narrative
+                set for the CS 499 capstone.
+            </p>
+        </header>
 
-      <div class="card half">
-        <h2>Professional Self-Assessment</h2>
-        <ul class="links">
-          <li><a href="self-assessment.html">Read my self-assessment</a></li>
-        </ul>
-      </div>
+        <div class="divider"></div>
 
-      <div class="card">
-        <h2>Original Artifact</h2>
-        <p class="meta">Airgead Banking (CS-210)</p>
-        <ul class="links">
-          <li><a href="original-artifact.html">Overview + original code</a></li>
-        </ul>
-      </div>
+        <!-- Professional Self-Assessment -->
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Professional Self-Assessment</h2>
+            <p>
+                This professional self-assessment reflects on my growth throughout the Computer Science program and
+                highlights the technical and professional skills I've developed. It serves as an introduction to
+                this ePortfolio and gives insight into me professionally.
+            </p>
+            <div class="btnRow btnRowStack">
+            <a class="btn" href="self-assessment.html">
+                View Professional Self-Assessment
+            </a>
+        </div>
+        </section>
 
-      <div class="card third">
-        <h2>Enhancement 1</h2>
-        <p class="meta">Software Design & Engineering</p>
-        <ul class="links">
-          <li><a href="enhancement1.html">Narrative + screenshots</a></li>
-          <li><a href="enhanced-artifact-1.html">Enhanced code</a></li>
-        </ul>
-      </div>
+        <div class="divider"></div>
 
-      <div class="card third">
-        <h2>Enhancement 2</h2>
-        <p class="meta">Algorithms & Data Structures</p>
-        <ul class="links">
-          <li><a href="enhancement2.html">Narrative + screenshots</a></li>
-          <li><a href="enhanced-artifact-2.html">Enhanced code</a></li>
-        </ul>
-      </div>
+        <!-- Artifacts -->
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Artifacts</h2>
+            <p>
+                The artifacts are the core of this ePortfolio. The original artifact is one of the first projects I
+                completed at SNHU. The enhanced artifact is the end result after completing the capstone.
+            </p>
+        </section>
 
-      <div class="card third">
-        <h2>Enhancement 3</h2>
-        <p class="meta">Databases</p>
-        <ul class="links">
-          <li><a href="enhancement3.html">Narrative + screenshots</a></li>
-          <li><a href="enhanced-artifact-3.html">Enhanced code</a></li>
-        </ul>
-      </div>
+        <!-- Two-column artifact cards -->
+        <div class="artifactGrid">
 
-      <div class="card">
-        <h2>About this project</h2>
-        <p>
-          The main artifact is the Airgead Banking project (CS-210), enhanced to show growth across software design,
-          algorithms/data structures, and databases.
-        </p>
-      </div>
-    </section>
+            <!-- Original Artifact -->
+            <section class="card">
+                <h2 class="sectionSubTitle">Original Artifact</h2>
+                <div class="btnRow">
+                    <a class="btn" href="https://github.com/jordynprisco/airgeadbanking" target="_blank" rel="noopener">
+                        View in GitHub Repo
+                    </a>
+                    <a class="btn" href="artifacts/original/Airgead_Banking.zip" download>
+                        Download Original Artifact
+                    </a>
+                    <a class="btn" href="https://www.loom.com/share/ae7c4a6be4904a34b52326e67eb0e772" target="_blank"
+                        rel="noopener">
+                        Watch Code Review Video
+                    </a>
+                </div>
+            </section>
 
-    <footer>
-      <p>© 2026 • Built with GitHub Pages</p>
-    </footer>
-  </div>
+            <!-- Enhanced Artifact -->
+            <section class="card">
+                <h2 class="sectionSubTitle">Enhanced Artifact</h2>
+                <div class="btnRow">
+                    <a class="btn" href="https://github.com/jordynprisco/AirgeadBanking_WebApp" target="_blank" rel="noopener">
+                        View in GitHub Repo
+                    </a>
+                    <a class="btn" href="artifacts/original/Airgead_Banking_Enhanced.zip" download>
+                        Download Enhanced Artifact
+                    </a>
+                    <a class="btn" href="https://jordynprisco.github.io/AirgeadBanking_WebApp/" target="_blank"
+                        rel="noopener">
+                        View Web Application
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Narratives -->
+        <section class="sectionBlock">
+            <h2 class="sectionTitle">Narratives</h2>
+            <p>
+                The narratives explain how each enhancement improved the project and the challenges I faced. There's
+                additional information that explains why I chose this artifact what I learned while improving the
+                original Airgead Banking application.
+            </p>
+            <div class="btnRow btnRowStack">
+            <a class="btn" href="narratives.html">View Narratives</a>
+        </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <footer>
+            <p>© 2026 • Built with GitHub Pages</p>
+        </footer>
+
+    </div>
 </body>
+
 </html>
